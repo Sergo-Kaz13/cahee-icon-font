@@ -4,5 +4,5 @@
   font-style: normal;
   font-weight: 700;
   src: local(''),
-    url('../fonts/Raleway-Bold.woff2') format('woff2');
+    url(../fonts/raleway-700.woff2) format('woff2');
 }

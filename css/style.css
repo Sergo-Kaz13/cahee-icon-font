@@ -1,1 +1,100 @@
+@import url('resert.css');
 @import url('fonts.css');
+
+body {
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(38, 38, 38);
+}
+._container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.services {
+  background: rgb(112, 191, 255);
+  padding: 0 5px;
+}
+.services__block {
+  display: flex;
+  min-height: 790px;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  width: 50%;
+  gap: 20px;
+}
+.menu__item {
+  flex: 0 0 400px;
+}
+.menu__link {
+  display: inline-block;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 100px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+  transition: .28s;
+}
+.menu__link::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 2px;
+  background: rgb(157, 157, 157);
+  position: absolute;
+  right: 25%;
+}
+.menu__text {
+  display: inline-block;
+  position: relative;
+  width: 75%;
+  text-align: center;
+}
+.menu__icon {
+  display: inline-block;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+.cls-1 {
+  fill: #262626;
+  transition: .28s;
+}
+.menu__link:hover {
+  transform: translate(-3px, -2px);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .7);
+  background: rgba(38, 38, 38, 1);
+}
+.menu__link:active {
+  transform: translate(0, 0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  
+}
+.menu__link:hover path {
+  fill: rgb(255, 255, 255);
+}
+.services__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background: url(../images/tomato.png) center center/auto no-repeat;
+}
+.title__text {
+  font-size: 90px;
+  color: rgb(255, 255, 255);
+}
